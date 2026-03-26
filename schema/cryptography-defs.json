@@ -408,6 +408,16 @@
         {
           "standard": [
             {
+              "name": "RFC7253",
+              "url": "https://doi.org/10.17487/RFC7253"
+            }
+          ],
+          "pattern": "AES[-(128|192|256)]-OCB[-{tagLength}]",
+          "primitive": "ae"
+        },
+        {
+          "standard": [
+            {
               "name": "RFC3686",
               "url": "https://doi.org/10.17487/RFC3686"
             }
@@ -1538,13 +1548,13 @@
       "standard": [
         {
           "name": "SipHash Spec",
-          "url": "https://131002.net/siphash/"
+          "url": "https://doi.org/10.1007/978-3-642-34931-7_28"
         }
       ],
       "variant": [
         {
           "pattern": "SipHash[-{compressionRounds}-{finalizationRounds}]",
-          "primitive": "hash"
+          "primitive": "mac"
         }
       ]
     },
